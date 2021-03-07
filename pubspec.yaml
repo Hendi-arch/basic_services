@@ -18,8 +18,8 @@ dependencies:
   # http request handling
   dio: ^3.0.10
 
-  # flutter plugin for reading and writing simple key-value pairs.
-  shared_preferences: ^0.5.12+4
+  # flutter plugin for store data in secure storage.
+  flutter_secure_storage: ^4.0.0
 
   # permission service
   permission_handler: ^5.1.0+2

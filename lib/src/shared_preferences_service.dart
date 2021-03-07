@@ -1,34 +1,17 @@
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:xulu_services/src/service_locator.dart';
 
 class SharedPreferencesService {
-  SharedPreferences _prefs;
+  final _prefs = dependenciesLocator<FlutterSecureStorage>();
 
-  Future initialiseSharedPrefsService() async => _prefs = await SharedPreferences.getInstance();
+  void removeKey(String key) async => await _prefs.delete(key: key);
 
-  void removeKey(String key) => _prefs.remove(key);
+  void clearPreferences() async => await _prefs.deleteAll();
 
-  void clearPreferences() => _prefs.clear();
-
-  dynamic getFromDisk(String key) {
-    var value = _prefs.get(key);
-    return value;
+  dynamic getFromDisk(String key) async {
+    var value = await _prefs.read(key: key);
+    return value as dynamic;
   }
 
-  void saveToDisk(String key, dynamic content) {
-    if (content is String) {
-      _prefs.setString(key, content);
-    }
-    if (content is bool) {
-      _prefs.setBool(key, content);
-    }
-    if (content is int) {
-      _prefs.setInt(key, content);
-    }
-    if (content is double) {
-      _prefs.setDouble(key, content);
-    }
-    if (content is List<String>) {
-      _prefs.setStringList(key, content);
-    }
-  }
+  void saveToDisk(String key, dynamic content) => _prefs.write(key: key, value: content);
 }

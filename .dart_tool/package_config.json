@@ -50,32 +50,20 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "ffi",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-0.1.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "file",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/file-5.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
-    },
-    {
       "name": "flutter",
       "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_test",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter_test",
+      "name": "flutter_secure_storage",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter_web_plugins",
+      "name": "flutter_test",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -98,18 +86,6 @@
       "languageVersion": "2.3"
     },
     {
-      "name": "intl",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.16.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.5"
-    },
-    {
-      "name": "js",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "matcher",
       "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10",
       "packageUri": "lib/",
@@ -128,24 +104,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "path_provider_linux",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_windows",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "permission_handler",
       "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.1.0+2",
       "packageUri": "lib/",
@@ -158,56 +116,8 @@
       "languageVersion": "2.6"
     },
     {
-      "name": "platform",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/platform-2.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "1.24"
-    },
-    {
       "name": "plugin_platform_interface",
       "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "process",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "shared_preferences",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_linux",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_macos",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_platform_interface",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_web",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "shared_preferences_windows",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-0.0.2+3",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -272,25 +182,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "win32",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/win32-1.7.4+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "xdg_directories",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
-    },
-    {
       "name": "xulu_services",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-07T05:07:28.361877Z",
+  "generated": "2021-03-07T19:17:54.197362Z",
   "generator": "pub",
   "generatorVersion": "2.12.0"
 }
