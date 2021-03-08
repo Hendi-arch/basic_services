@@ -75,9 +75,9 @@
     },
     {
       "name": "get_it",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-5.0.6",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-6.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
@@ -188,7 +188,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-07T19:17:54.197362Z",
+  "generated": "2021-03-08T07:15:34.182828Z",
   "generator": "pub",
   "generatorVersion": "2.12.0"
 }
