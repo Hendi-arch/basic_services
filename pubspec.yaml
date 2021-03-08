@@ -24,8 +24,8 @@ dependencies:
   # permission service ( null safety  )
   permission_handler: ^6.0.1
 
-  # injection service ( null safety )
-  get_it: ^6.0.0
+  # injection service
+  get_it: ^5.0.6
 
 dev_dependencies:
   flutter_test:
