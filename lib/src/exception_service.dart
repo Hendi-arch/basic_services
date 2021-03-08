@@ -12,27 +12,27 @@ mixin ExceptionServiceMixin {
 
     // if error is Dio Error
     if (error is DioError && errorCallback == null) {
-      if (error.type == DioErrorType.RESPONSE) {
+      if (error.type == DioErrorType.response) {
         print('RESPONSE');
         _dialogService.showDialog(title: 'RESPONSE', description: error.toString());
       }
-      if (error.type == DioErrorType.CONNECT_TIMEOUT) {
+      if (error.type == DioErrorType.connectTimeout) {
         print('CONNECT_TIMEOUT');
         _dialogService.showDialog(title: 'CONNECT_TIMEOUT', description: error.toString());
       }
-      if (error.type == DioErrorType.DEFAULT) {
+      if (error.type == DioErrorType.other) {
         print('DEFAULT');
         _dialogService.showDialog(title: 'DEFAULT', description: error.toString());
       }
-      if (error.type == DioErrorType.CANCEL) {
+      if (error.type == DioErrorType.cancel) {
         print('CANCEL');
         _dialogService.showDialog(title: 'CANCEL', description: error.toString());
       }
-      if (error.type == DioErrorType.SEND_TIMEOUT) {
+      if (error.type == DioErrorType.sendTimeout) {
         print('SEND_TIMEOUT');
         _dialogService.showDialog(title: 'SEND_TIMEOUT', description: error.toString());
       }
-      if (error.type == DioErrorType.RECEIVE_TIMEOUT) {
+      if (error.type == DioErrorType.receiveTimeout) {
         print('RECEIVE_TIMEOUT');
         _dialogService.showDialog(title: 'RECEIVE_TIMEOUT', description: error.toString());
       }

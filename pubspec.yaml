@@ -15,16 +15,16 @@ dependencies:
   # setup services
   stacked_services: ^0.7.2
 
-  # http request handling
-  dio: ^3.0.10
+  # http request handling ( null safety )
+  dio: ^4.0.0-beta6
 
-  # flutter plugin for store data in secure storage.
+  # flutter plugin for store data in secure storage. ( null safety )
   flutter_secure_storage: ^4.0.0
 
-  # permission service
-  permission_handler: ^5.1.0+2
+  # permission service ( null safety  )
+  permission_handler: ^6.0.1
 
-  # injection service
+  # injection service ( null safety )
   get_it: ^6.0.0
 
 dev_dependencies:
