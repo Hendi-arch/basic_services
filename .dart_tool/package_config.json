@@ -69,15 +69,15 @@
     },
     {
       "name": "get",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get-3.26.0",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get-4.0.0-nullsafety.2",
       "packageUri": "lib/",
-      "languageVersion": "2.9"
+      "languageVersion": "2.12"
     },
     {
       "name": "get_it",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-5.0.6",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-6.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
@@ -141,9 +141,9 @@
     },
     {
       "name": "stacked_services",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/stacked_services-0.7.2",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/stacked_services-0.8.0-nullsafety",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.9"
     },
     {
       "name": "stream_channel",
@@ -188,7 +188,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-08T07:26:03.848335Z",
+  "generated": "2021-03-23T03:58:07.216488Z",
   "generator": "pub",
-  "generatorVersion": "2.12.0"
+  "generatorVersion": "2.12.2"
 }
