@@ -1,8 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:xulu_services/src/service_locator.dart';
 
 class SharedPreferencesService {
-  final _prefs = dependenciesLocator<FlutterSecureStorage>();
+  final _prefs = FlutterSecureStorage();
 
   void removeKey(String key) async => await _prefs.delete(key: key);
 
