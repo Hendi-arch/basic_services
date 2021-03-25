@@ -39,7 +39,7 @@
     },
     {
       "name": "dio",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.0-beta6",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.0-prev3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -57,7 +57,7 @@
     },
     {
       "name": "flutter_secure_storage",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-4.0.0",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -105,13 +105,13 @@
     },
     {
       "name": "permission_handler",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-6.0.1",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-6.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "permission_handler_platform_interface",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.0.0+1",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -141,9 +141,9 @@
     },
     {
       "name": "stacked_services",
-      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/stacked_services-0.8.0-nullsafety",
+      "rootUri": "file:///Users/hendinoviansyah/PROJECTS/flutter/.pub-cache/hosted/pub.dartlang.org/stacked_services-0.8.0-nullsafety.1",
       "packageUri": "lib/",
-      "languageVersion": "2.9"
+      "languageVersion": "2.12"
     },
     {
       "name": "stream_channel",
@@ -188,7 +188,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-23T03:58:07.216488Z",
+  "generated": "2021-03-25T16:51:56.279303Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }
