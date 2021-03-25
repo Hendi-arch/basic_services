@@ -5,19 +5,19 @@ abstract class XuluApiService {
   Future<Response> dioPost(
     String url, {
     dynamic data,
-    String token,
+    String? token,
     responseType: ResponseType.json,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> query,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? query,
   });
 
   /// GET Dio Method
   Future<Response> dioGet(
     String url, {
-    String token,
+    String? token,
     responseType: ResponseType.json,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> query,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? query,
   });
 
   /// DOWNLOAD Dio Method

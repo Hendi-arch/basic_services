@@ -185,10 +185,10 @@
       "name": "xulu_services",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-03-25T16:51:56.279303Z",
+  "generated": "2021-03-25T16:56:14.816353Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }
