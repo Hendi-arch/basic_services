@@ -15,8 +15,8 @@ dependencies:
   # setup services ( null safety beta )
   stacked_services: ^0.8.0-nullsafety.1
 
-  # http request handling ( null safety beta )
-  dio: ^4.0.0-prev3
+  # http request handling ( null safety )
+  dio: ^4.0.0
 
   # flutter plugin for store data in secure storage. ( null safety )
   flutter_secure_storage: ^4.1.0
