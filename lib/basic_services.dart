@@ -1,4 +1,4 @@
-library services;
+library basic_services;
 
 export './src/xulu_api_service.dart';
 export './src/exception_service.dart';

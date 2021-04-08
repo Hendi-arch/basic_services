@@ -1,16 +1,45 @@
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesService {
-  final _prefs = FlutterSecureStorage();
+  static SharedPreferencesService? _instance;
 
-  void removeKey(String key) async => await _prefs.delete(key: key);
-
-  void clearPreferences() async => await _prefs.deleteAll();
-
-  dynamic getFromDisk(String key) async {
-    var value = await _prefs.read(key: key);
-    return value as dynamic;
+  static Future<SharedPreferencesService> getInstance() async {
+    if (_instance == null) {
+      _instance = SharedPreferencesService._(await SharedPreferences.getInstance());
+    }
+    return _instance!;
   }
 
-  void saveToDisk(String key, dynamic content) => _prefs.write(key: key, value: content);
+  final SharedPreferences _preferences;
+  SharedPreferencesService._(this._preferences);
+
+  void removeKey(String key) async => await _preferences.remove(key);
+
+  void clearPreferences() async => await _preferences.clear();
+
+  dynamic getFromDisk(String key) {
+    var value = _preferences.get(key);
+    print('key:$key value:$value');
+    return value;
+  }
+
+  void saveToDisk(String key, dynamic content) {
+    print('key:$key value:$content');
+
+    if (content is String) {
+      _preferences.setString(key, content);
+    }
+    if (content is bool) {
+      _preferences.setBool(key, content);
+    }
+    if (content is int) {
+      _preferences.setInt(key, content);
+    }
+    if (content is double) {
+      _preferences.setDouble(key, content);
+    }
+    if (content is List<String>) {
+      _preferences.setStringList(key, content);
+    }
+  }
 }

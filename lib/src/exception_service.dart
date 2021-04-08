@@ -1,12 +1,12 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:xulu_services/src/service_locator.dart';
-import '../xulu_services.dart';
+import 'package:basic_services/src/service_locator.dart';
+import '../basic_services.dart';
 
 mixin ExceptionServiceMixin {
   final _dialogService = dependenciesLocator<DialogService>();
 
-  void onHandlingError(error, Object key, {Function? errorCallback}) {
+  void onHandlingError(error, Object? key, {Function? errorCallback}) {
     print('Key event is : $key');
     print('Error event is : $error');
 
@@ -36,20 +36,20 @@ mixin ExceptionServiceMixin {
         print('RECEIVE_TIMEOUT');
         _dialogService!.showDialog(title: 'RECEIVE_TIMEOUT', description: error.toString());
       }
-    }
-
-    // handle other event error here
-    if (error is SocketException) {
-      _dialogService!.showDialog(title: 'SocketException', description: error.toString());
-    }
-    if (error is HttpException) {
-      _dialogService!.showDialog(title: 'HttpException', description: error.toString());
-    }
-
-    if (errorCallback == null) {
-      _dialogService!.showDialog(title: 'Error', description: error.toString());
     } else {
-      errorCallback.call();
+      // handle other event error here
+      if (error is SocketException) {
+        _dialogService!.showDialog(title: 'SocketException', description: error.toString());
+      }
+      if (error is HttpException) {
+        _dialogService!.showDialog(title: 'HttpException', description: error.toString());
+      }
+
+      if (errorCallback == null) {
+        _dialogService!.showDialog(title: 'Error', description: error.toString());
+      } else {
+        errorCallback.call();
+      }
     }
   }
 }
