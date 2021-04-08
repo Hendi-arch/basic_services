@@ -1,6 +1,6 @@
 library basic_services;
 
-export './src/xulu_api_service.dart';
+export './src/basic_api_service.dart';
 export './src/exception_service.dart';
 export './src/permission_service.dart';
 export './src/shared_preferences_service.dart';

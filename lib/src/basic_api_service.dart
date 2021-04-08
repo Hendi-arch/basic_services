@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart' show Response, ResponseType;
 
-abstract class XuluApiService {
+abstract class BasicApiService {
   /// POST Dio Method
   Future<Response> dioPost(
     String url, {
