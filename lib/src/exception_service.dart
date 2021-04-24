@@ -8,7 +8,7 @@ mixin ExceptionServiceMixin {
 
   void onHandlingError(error, Object? key, {Function? errorCallback}) {
     print('Key event is : $key');
-    print('[Xulu Dev] ERROR INFO : => ${error.toString()}');
+    print('[Hendi Dev] ERROR INFO : => ${error.toString()}');
 
     // if error is related to http or server connection
     if (error is DioError || error is SocketException || error is HttpException && errorCallback == null) {
