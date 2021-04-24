@@ -6,16 +6,27 @@ import 'service_locator.dart';
 mixin ExceptionServiceMixin {
   final _bottomSheetService = dependenciesLocator<BottomSheetService>();
 
-  void onHandlingError(error, Object? key, {Function? errorCallback}) {
+  void onHandlingError(error, backEndMessage, Object? key, {Function? errorCallback}) {
     print('Key event is : $key');
     print('[Hendi Dev] ERROR INFO : => ${error.toString()}');
 
     // if error is related to http or server connection
     if (error is DioError || error is SocketException || error is HttpException && errorCallback == null) {
+      String? title;
+      String? description;
+
+      if (backEndMessage != null) {
+        title = backEndMessage?.message ?? 'Internal Server Error';
+        description =
+            backEndMessage?.errors?.values.toList().first.toString().replaceAll(new RegExp(r'[^\w\s]+'), '') ??
+                'Sorry, Our system is currently experiencing technical issues, please try again later';
+      } else {
+        title = 'Internal Server Error';
+        description = 'Sorry, Our system is currently experiencing technical issues, please try again later';
+      }
+
       // show message to user
-      _bottomSheetService.showBottomSheet(
-          title: 'Internal Server Error',
-          description: 'Sorry, Our system is currently experiencing technical issues, please try again later.');
+      _bottomSheetService.showBottomSheet(title: title!, description: description);
     } else {
       if (errorCallback == null) {
         _bottomSheetService.showBottomSheet(
