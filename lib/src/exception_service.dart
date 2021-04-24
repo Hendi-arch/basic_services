@@ -17,9 +17,8 @@ mixin ExceptionServiceMixin {
 
       if (backEndMessage != null) {
         title = backEndMessage?.message ?? 'Internal Server Error';
-        description =
-            backEndMessage?.errors?.values.toList().first.toString().replaceAll(new RegExp(r'[^\w\s]+'), '') ??
-                'Sorry, Our system is currently experiencing technical issues, please try again later';
+        description = backEndMessage?.errors ??
+            'Sorry, Our system is currently experiencing technical issues, please try again later';
       } else {
         title = 'Internal Server Error';
         description = 'Sorry, Our system is currently experiencing technical issues, please try again later';
