@@ -1,52 +1,26 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:basic_services/src/service_locator.dart';
 import '../basic_services.dart';
+import 'service_locator.dart';
 
 mixin ExceptionServiceMixin {
-  final _dialogService = dependenciesLocator<DialogService>();
+  final _bottomSheetService = dependenciesLocator<BottomSheetService>();
 
   void onHandlingError(error, Object? key, {Function? errorCallback}) {
     print('Key event is : $key');
-    print('Error event is : $error');
+    print('[Xulu Dev] ERROR INFO : => ${error.toString()}');
 
-    // if error is Dio Error
-    if (error is DioError && errorCallback == null) {
-      if (error.type == DioErrorType.response) {
-        print('RESPONSE');
-        _dialogService!.showDialog(title: 'RESPONSE', description: error.toString());
-      }
-      if (error.type == DioErrorType.connectTimeout) {
-        print('CONNECT_TIMEOUT');
-        _dialogService!.showDialog(title: 'CONNECT_TIMEOUT', description: error.toString());
-      }
-      if (error.type == DioErrorType.other) {
-        print('DEFAULT');
-        _dialogService!.showDialog(title: 'DEFAULT', description: error.toString());
-      }
-      if (error.type == DioErrorType.cancel) {
-        print('CANCEL');
-        _dialogService!.showDialog(title: 'CANCEL', description: error.toString());
-      }
-      if (error.type == DioErrorType.sendTimeout) {
-        print('SEND_TIMEOUT');
-        _dialogService!.showDialog(title: 'SEND_TIMEOUT', description: error.toString());
-      }
-      if (error.type == DioErrorType.receiveTimeout) {
-        print('RECEIVE_TIMEOUT');
-        _dialogService!.showDialog(title: 'RECEIVE_TIMEOUT', description: error.toString());
-      }
+    // if error is related to http or server connection
+    if (error is DioError || error is SocketException || error is HttpException && errorCallback == null) {
+      // show message to user
+      _bottomSheetService.showBottomSheet(
+          title: 'Internal Server Error',
+          description: 'Sorry, Our system is currently experiencing technical issues, please try again later.');
     } else {
-      // handle other event error here
-      if (error is SocketException) {
-        _dialogService!.showDialog(title: 'SocketException', description: error.toString());
-      }
-      if (error is HttpException) {
-        _dialogService!.showDialog(title: 'HttpException', description: error.toString());
-      }
-
       if (errorCallback == null) {
-        _dialogService!.showDialog(title: 'Error', description: error.toString());
+        _bottomSheetService.showBottomSheet(
+            title: 'Something When Wrong',
+            description: 'Sorry, Something wrong with our system, please try again later.');
       } else {
         errorCallback.call();
       }
