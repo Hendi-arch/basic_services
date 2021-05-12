@@ -1,27 +1,23 @@
-import 'package:dio/dio.dart' show Response, ResponseType;
-
 abstract class BasicApiService {
   /// POST Dio Method
-  Future<Response> dioPost(
+  Future<T> dioPost<T>(
     String url, {
     dynamic data,
     String? token,
-    responseType: ResponseType.json,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? query,
   });
 
   /// GET Dio Method
-  Future<Response> dioGet(
+  Future<T> dioGet<T>(
     String url, {
     String? token,
-    responseType: ResponseType.json,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? query,
   });
 
   /// DOWNLOAD Dio Method
-  Future<Response> dioDownload(
+  Future<T> dioDownload<T>(
     String url,
     String savePath,
   );
