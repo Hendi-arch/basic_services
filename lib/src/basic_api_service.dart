@@ -1,6 +1,6 @@
 abstract class BasicApiService {
   /// POST Dio Method
-  Future<T> dioPost<T>(
+  Future<dynamic> dioPost(
     String url, {
     dynamic data,
     String? token,
@@ -9,7 +9,7 @@ abstract class BasicApiService {
   });
 
   /// GET Dio Method
-  Future<T> dioGet<T>(
+  Future<dynamic> dioGet(
     String url, {
     String? token,
     Map<String, dynamic>? headers,
@@ -17,7 +17,7 @@ abstract class BasicApiService {
   });
 
   /// DOWNLOAD Dio Method
-  Future<T> dioDownload<T>(
+  Future<dynamic> dioDownload(
     String url,
     String savePath,
   );
