@@ -22,7 +22,7 @@ dependencies:
   permission_handler: ^7.1.0
 
   # injection service ( null safety )
-  get_it: ^7.1.3
+  get_it: ^6.0.0
 
 dev_dependencies:
   flutter_test:
