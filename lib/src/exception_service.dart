@@ -35,13 +35,13 @@ class BasicServiceErrorException implements Exception {
 
   /// Response info, it may be `null` if the request can't reach to
   /// the http server, for example, occurring a dns error, network is not available.
-  dynamic? response;
+  dynamic response;
 
   BasicErrorType type;
 
   /// The original error/exception object; It's usually not null when `type`
   /// is BasicErrorType.DEFAULT
-  dynamic? error;
+  dynamic error;
 
   String get message => (error?.toString() ?? '');
 
